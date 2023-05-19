@@ -12,3 +12,10 @@ The input will always be made of only lowercase letters and will never be empty.
 
 
 // Solution
+
+function wordsToMarks(str) {
+  let sum = 0;
+  for (let i = 0; i < str.length; i++)
+    sum += str.charCodeAt(i) - 96;
+  return sum;
+}
